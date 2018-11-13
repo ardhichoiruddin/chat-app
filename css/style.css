@@ -6,8 +6,88 @@
 
 body
 {
+    position: relative;
     padding: 0;
     margin: 0;
     font-size: 100%;
     font-family: 'Archivo', sans-serif !important;
+}
+
+
+
+/* Content center */
+
+.chat
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.chat-box-left
+{
+    position: relative;
+    max-width: 33rem;
+    min-height: 60px;
+    background-color: #E8E8E8;
+    padding: 0.8rem;
+    z-index: 100;
+}
+
+.chat-box-left::before
+{
+    position: absolute;
+    content: " ";
+    border-width: 27px;
+    border-style: solid;
+    border-color: transparent transparent #E8E8E8 transparent;
+    left: -26px;
+    bottom: 0;
+    z-index: 88;
+    transform: rotate(-10deg)
+}
+
+.chat-box-right
+{
+    position: relative;
+    max-width: 33rem;
+    min-height: 30px;
+    background-color: hsl(203,89%,90%);
+    padding: 0.8rem;
+    z-index: 100;
+    float: right;
+    margin-right: 30px;
+    color: #000;
+}
+
+.chat-box-right::before
+{
+    position: absolute;
+    content: " ";
+    border-width: 27px;
+    border-style: solid;
+    border-color: transparent transparent hsl(203,89%,90%) transparent;
+    right: -26px;
+    bottom: 0;
+    z-index: 88;
+    transform: rotate(10deg);
+}
+
+.chat-box-right p, .chat-box-left p
+{
+    margin: 0;
+}
+
+
+.chat-board
+{
+    position: fixed;
+    width: 75%;
+    bottom: 2px;
+    right: 0;
+}
+
+.form-inline .input[type=text]
+{
+    width: 100%;
 }
