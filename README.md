@@ -1,2 +1,1 @@
-# chat-app
-chat app with chat bot
+chat-app-bot
