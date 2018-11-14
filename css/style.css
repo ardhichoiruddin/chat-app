@@ -31,6 +31,23 @@ body
     border-radius: 50%;
 }
 
+.kol-sm-3
+{
+    position: relative;
+    width: 25%;
+}
+
+.kol-sm-9
+{
+    position: relative;
+    width: 75%;
+}
+
+.margin-top
+{
+    margin-top: 1rem;
+}
+
 
 /* Navbar */
 
@@ -55,14 +72,25 @@ body
 {
     position: relative;
     width: 100%;
-    padding: 0.6rem;
+    padding: 0.9rem 0.6rem;
     border-bottom: solid 1px #eeeeee;
+}
+
+.chat-random .media
+{
+    align-items: center;
 }
 
 .chat-random:hover
 {
     background-color: #2b7cff;
     color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    border-bottom: solid 1px #2b7cff;
+    -webkit-box-shadow: 0px 3px 15px -5px rgba(0,0,0,0.44);
+    -moz-box-shadow: 0px 3px 15px -5px rgba(0,0,0,0.44);
+    box-shadow: 0px 3px 15px -5px rgba(0,0,0,0.44);
 }
 
 .chat-random .media-body
@@ -81,6 +109,7 @@ body
 {
     font-size: 0.8rem;
     color: #C2C2C2;
+    margin: 0;
 }
 
 .photo-circle.photo-cb-left
@@ -117,6 +146,11 @@ body
     background-color: rgb(243, 243, 243);
 }
 
+.chat .media
+{
+    align-items: flex-end;
+}
+
 .chat-box-left
 {
     position: relative;
@@ -141,7 +175,7 @@ body
     left: -26px;
     bottom: 0;
     z-index: 88;
-    transform: rotate(-10deg)
+    transform: rotate(-5deg)
 }
 
 .chat-box-right
@@ -169,7 +203,7 @@ body
     right: -26px;
     bottom: 0;
     z-index: 88;
-    transform: rotate(10deg);
+    transform: rotate(5deg);
 }
 
 .chat-box-right p, .chat-box-left p
@@ -179,9 +213,11 @@ body
 
 .photo-cb
 {
+    position: relative;
     width: 70px;
     height: 70px;
     overflow: hidden;
+    bottom: -10px;
 }
 
 
