@@ -136,9 +136,9 @@ body
 
 .chat-random .media-body h5
 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 0;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .chat-random .media-body p
@@ -154,6 +154,26 @@ body
     width: 50px;
     height: 50px;
     overflow: hidden;
+}
+
+.chat-random .media
+{
+    position: relative;
+    width: 100%;
+}
+
+.chat-random .media .active-user
+{
+    position: absolute;
+    content: " ";
+    top:0;
+    left: 0;
+    width: 1rem;
+    height: 1rem;
+    border: solid 0.1rem #fff;
+    background-color: #2ef456;
+    border-radius: 50%;
+    z-index: 1000;
 }
 
 
@@ -174,12 +194,12 @@ body
 .chat
 {
     position: relative;
-    width: 100%;
+    max-width: 100%;
     height: 90vh;
     overflow-y: auto;
     padding: 1rem;
     padding-bottom: 10rem;
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(241, 241, 241);
 }
 
 .chat .media
@@ -199,6 +219,7 @@ body
     float: left;
     font-size: 1rem;
     font-weight: 400;
+    border-radius: 10px;
 }
 
 .chat-box-left::before
@@ -227,6 +248,7 @@ body
     color: #2B5CFF;
     font-size: 1rem;
     font-weight: 400;
+    border-radius: 10px;
 }
 
 .chat-box-right::before
@@ -244,6 +266,8 @@ body
 
 .chat-box-right p, .chat-box-left p
 {
+    font-size: 1rem;
+    font-weight: 400;
     margin: 0;
 }
 
@@ -280,7 +304,6 @@ body
 {
     border: none;
     box-shadow: none;
-    border-bottom: solid 1px #C3C3C3;
     background-color: transparent;
     font-size: 1rem;
     font-weight: 400;
@@ -289,7 +312,6 @@ body
 
 .chat-board .input-group .form-control:focus
 {
-    border-bottom: solid 1px #282828;
     color: #282828;
     font-weight: 600;
 }
@@ -300,10 +322,15 @@ body
     color: #a7a7a7;
 }
 
-.chat-board .input-group-text p
+.chat-board .input-group-text button
 {
     font-size: 1.2rem;
     font-weight: 600;
-    margin: 0;
+    margin: 0;  
     color: #2b7cff;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
 }
